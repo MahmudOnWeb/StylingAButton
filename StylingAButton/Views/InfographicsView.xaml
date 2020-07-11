@@ -1,0 +1,310 @@
+﻿<UserControl x:Class="StylingAButton.Views.InfographicsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+        <Geometry x:Key="left">M 240 36.054688 C 112.83711 71.882105 25.000047 187.8864 25 320 c 1.48e-4 43.06377 9.428571 85.60533 27.623047 124.63672 L 104.53125 362.50586 176.43945 340.375 C 175.48127 333.62561 175.00026 326.81706 175 320 c 9e-5 -48.66469 24.41235 -94.08411 65 -120.93359 l 20 -81.50586 z</Geometry>
+        <Geometry x:Key="right">m 400 36.054688 20 81.505862 -20 81.50586 c 40.58765 26.84948 64.99991 72.2689 65 120.93359 -2.4e-4 3.66803 -0.13966 7.33473 -0.41797 10.99219 l 51.03125 83.19043 75.03125 23.19043 C 606.71033 400.32788 614.99994 360.37889 615 320 614.99995 187.8864 527.16289 71.882105 400 36.054688 Z</Geometry>
+        <Geometry x:Key="down">M 366.29688 457.41016 C 351.3789 462.43645 335.74198 464.99995 320 465 c -12.60965 10e-5 -25.16544 -1.64464 -37.34961 -4.89258 L 193.83789 495 157.02539 565.89258 C 205.34526 597.91907 262.03013 614.99933 320 615 c 60.68138 1.7e-4 119.88655 -18.71274 169.54492 -53.58789 L 407.9209 519.41113 Z</Geometry>
+
+        <Geometry x:Key="leftFocused">M 240 36.054688 C 112.83711 71.882105 25.000047 187.8864 25 320 c 1.48e-4 43.06377 9.428571 85.60533 27.623047 124.63672 L 104.53125 362.50586 176.43945 340.375 C 175.48127 333.62561 175.00026 326.81706 175 320 c 9e-5 -48.66469 24.41235 -94.08411 65 -120.93359 l 20 -81.50586 z</Geometry>
+        <Geometry x:Key="rightFocused">m 400 36.054688 20 81.505862 -20 81.50586 c 40.58765 26.84948 64.99991 72.2689 65 120.93359 -2.4e-4 3.66803 -0.13966 7.33473 -0.41797 10.99219 l 51.03125 83.19043 75.03125 23.19043 C 606.71033 400.32788 614.99994 360.37889 615 320 614.99995 187.8864 527.16289 71.882105 400 36.054688 Z</Geometry>
+        <Geometry x:Key="downFocused">M 366.29688 457.41016 C 351.3789 462.43645 335.74198 464.99995 320 465 c -12.60965 10e-5 -25.16544 -1.64464 -37.34961 -4.89258 L 193.83789 495 157.02539 565.89258 C 205.34526 597.91907 262.03013 614.99933 320 615 c 60.68138 1.7e-4 119.88655 -18.71274 169.54492 -53.58789 L 407.9209 519.41113 Z</Geometry>
+
+        <Geometry x:Key="leftText">m 61.290323 360.48387 77.419357 -45.96774 -74.193551 -47.58065 91.935481 -29.03225 -37.90322 -70.16129 87.09677 11.29032 -3.22581 -84.677421 v 0 l 0.80646 1.612903</Geometry>
+        <Geometry x:Key="rightText">m 449.19355 94.354839 -10.48387 108.064511 102.41935 -17.74193 -37.09677 103.22581 91.93548 25.80645 -64.51613 75</Geometry>
+        <Geometry x:Key="downText">m 195.16129 562.09677 215.32258 16.12904 -201.6129 -37.90323 179.03226 8.87097 -155.64517 -39.51613 133.87097 4.03226 -92.74193 -25.80645 62.90322 -2.41936</Geometry>
+
+        <ControlTemplate x:Key="LeftButtonTemplate" TargetType="{x:Type Button}">
+            <Grid x:Name="grid">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="leftFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#FF473144"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#CCEFC69B"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="cp" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFAF1B3F" />
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.5000000" Value="Transparent" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="FocusStates">
+                        <VisualState x:Name="Unfocused"/>
+                        <VisualState x:Name="Focused">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="left" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="leftFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFAF1B3F"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                <ContentPresenter Name="cp" Content="{TemplateBinding Content}" TextBlock.Foreground="Transparent" TextBlock.FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Path Name="left" Fill="#FFEFC69B" StrokeThickness="10" Stroke="#FFAF1B3F" RenderTransformOrigin="0.5,0.5" Data="{StaticResource left}">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path Name="leftFocused" StrokeThickness="10" Stroke="Transparent" StrokeDashArray="8 2 1 2" Data="{StaticResource leftFocused}" />
+                <Path Name="leftText" StrokeThickness="10" Stroke="#FF473144" Data="{StaticResource leftText}" />
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="RightButtonTemplate" TargetType="{x:Type Button}">
+            <Grid x:Name="grid">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="rightFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#FF473144"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#CCCCB69B"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="cp" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFAF1B3F" />
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.5000000" Value="Transparent" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="FocusStates">
+                        <VisualState x:Name="Unfocused"/>
+                        <VisualState x:Name="Focused">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="right" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="rightFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFAF1B3F"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                <ContentPresenter Name="cp" Content="{TemplateBinding Content}" TextBlock.Foreground="Transparent" TextBlock.FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Path Name="right" Fill="#FFCCB69B" StrokeThickness="10" Stroke="#FFAF1B3F" RenderTransformOrigin="0.5,0.5" Data="{StaticResource right}">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path Name="rightFocused" StrokeThickness="10" Stroke="Transparent" StrokeDashArray="8 2 1 2" Data="{StaticResource rightFocused}" />
+                <Path Name="rightText" StrokeThickness="10" Stroke="#FF473144" Data="{StaticResource rightText}" />
+            </Grid>
+        </ControlTemplate>
+
+        <ControlTemplate x:Key="DownButtonTemplate" TargetType="{x:Type Button}">
+            <Grid x:Name="grid">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="downFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#FF473144"/>
+                                </ColorAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="#CCDF9B6D"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.1"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.2"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.9"/>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1"/>
+                                </DoubleAnimationUsingKeyFrames>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="cp" Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)">
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.1000000" Value="#FFAF1B3F" />
+                                    <DiscreteColorKeyFrame KeyTime="00:00:00.5000000" Value="Transparent" />
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState x:Name="Disabled">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                    <EasingColorKeyFrame KeyTime="00:00:00" Value="Gray"/>
+                                </ColorAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                    <VisualStateGroup x:Name="FocusStates">
+                        <VisualState x:Name="Unfocused"/>
+                        <VisualState x:Name="Focused">
+                            <Storyboard>
+                                <Storyboard>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="down" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="Transparent"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="downFocused" Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)">
+                                        <EasingColorKeyFrame KeyTime="00:00:00" Value="#FFAF1B3F"/>
+                                    </ColorAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+
+                <ContentPresenter Name="cp" Content="{TemplateBinding Content}" TextBlock.Foreground="Transparent" TextBlock.FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Path Name="down" Fill="#FFDF9B6D" StrokeThickness="10" Stroke="#FFAF1B3F" RenderTransformOrigin="0.5,0.5" Data="{StaticResource down}">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path Name="downFocused" StrokeThickness="10" Stroke="Transparent" StrokeDashArray="8 2 1 2" Data="{StaticResource downFocused}" />
+                <Path Name="downText" StrokeThickness="10" Stroke="#FF473144" Data="{StaticResource downText}" />
+            </Grid>
+        </ControlTemplate>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Viewbox Grid.Column="0">
+            <Path Name="pathLeft" Fill="#FFF5D491" StrokeThickness="5" Stroke="#FFF06C9B" StrokeMiterLimit="4" Data="{StaticResource left}" />
+        </Viewbox>
+
+        <Viewbox Grid.Column="1">
+            <Path Name="pathRight" Fill="#FFF9B9B7" StrokeThickness="5" Stroke="#FF96C9DC" StrokeMiterLimit="4" Data="{StaticResource right}" />
+        </Viewbox>
+
+        <Viewbox Grid.Column="2">
+            <Path Name="pathDown" Fill="#FFF5D491" StrokeThickness="5" Stroke="#FFF06C9B" StrokeMiterLimit="4" Data="{StaticResource down}" />
+        </Viewbox>
+
+        <Viewbox Grid.Column="3">
+            <Grid>
+                <Button Template="{DynamicResource LeftButtonTemplate}" Content="Left" FocusVisualStyle="{x:Null}" />
+                <Button Template="{DynamicResource RightButtonTemplate}" Content="Right"/>
+                <Button Template="{DynamicResource DownButtonTemplate}" Content="Down"/>
+            </Grid>
+        </Viewbox>
+
+        <Button Content="Next" Command="{Binding ChangeViewCommand}" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" />
+    </Grid>
+</UserControl>

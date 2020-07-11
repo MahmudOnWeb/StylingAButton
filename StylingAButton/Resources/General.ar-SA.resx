@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>خط</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>خط الكمبيوتر (أو الخط) هو ملف بيانات رقمي يحتوي على مجموعة من الحروف الرسومية أو الأحرف أو الرموز المرتبطة بيانياً. على الرغم من أن مصطلح الخط يشير لأول مرة إلى مجموعة من القطع المعدنية المنقولة في نمط وحجم واحد ، فمنذ التسعينات تقريبًا ، يتم استخدامه للإشارة إلى مجموعة من الأشكال الرقمية بأسلوب واحد ، قابلة للتطوير إلى أحجام مختلفة.
+يصف تعريف من Microsoft الخط بأنه "تصميم رسومي مطبّق على مجموعة من الأرقام والرموز والأحرف التي تصف محرفًا معينًا ، إلى جانب صفات أخرى مثل الحجم والتباعد والخطوة".
+
+هناك ثلاثة أنواع أساسية من تنسيقات بيانات ملف خط الكمبيوتر - الخطوط النقطية ، الخطوط الموجهة أو الخطوط العريضة ، وخطوط الحد.
+
+الخطوط الخارجية أو الخطوط الاتجاهية عبارة عن مجموعة من الصور المتجهة ، تتكون من خطوط ومنحنيات تحدد حدود الحروف الرسومية. تم استخدام الخطوط الاتجاهية المبكرة بواسطة شاشات العرض الموجهة والرساميات الموجهة باستخدام خطوطها الداخلية الخاصة ، وعادةً ما يكون ذلك بحدود رقيقة مفردة بدلاً من الحروف الرسومية السميكة المحددة. جلب ظهور النشر المكتبي الحاجة إلى معيار عالمي لدمج واجهة المستخدم الرسومية لطابعات ماكنتوش والليزر الأولى. كان المعيار العالمي (ولا يزال) Adobe PostScript. تتضمن أمثلة الخطوط التفصيلية خطوط PostScript Type 1 و Type 3 و TrueType و OpenType.
+
+تروتايب هو معيار خط تفصيلي تم تطويره بواسطة Apple في أواخر الثمانينيات.
+OpenType هو تنسيق لخطوط الكمبيوتر القابلة للتحجيم. كان مبنيًا على سلفه TrueType ، مع الاحتفاظ بالهيكل الأساسي لـ TrueType وإضافة العديد من هياكل البيانات المعقدة لوصف السلوك المطبعي. OpenType هي علامة تجارية مسجلة لشركة Microsoft Corporation.</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>زر</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>يشير زر المصطلح في الحوسبة ، والمعروف أيضًا باسم زر الأمر ، إلى عنصر تحكم رسومي يوفر للمستخدم طريقة بسيطة للتفاعل مع النظام. تقدم Microsoft التعريف التالي للزر: "عنصر رسومي يبدو مشابهًا للزر الفعلي أو مفتاح لوحة المفاتيح في واجهة المستخدم. يتم الضغط على زر بالنقر فوقه باستخدام الماوس ، عن طريق الضغط على Enter أو مسافة على لوحة المفاتيح ، إذا كان الزر به التركيز ، أو بالنقر بإصبع (إذا كانت الشاشة تدعمه). "
+
+الزر النموذجي هو مستطيل ، أعرض من الطول ، مع تسمية توضيحية وصفية في وسطه. الطريقة الأكثر شيوعًا للضغط على الزر هي النقر فوقه بمؤشر يتم التحكم فيه بواسطة الماوس ، ولكن يمكن استخدام مدخلات أخرى مثل ضغطات المفاتيح أيضًا. لا يقتصر الزر على شكل مستطيل. الشرط الوحيد لتفاعل الزر هو أنه يمكن للمستخدم تنفيذ أمر من خلال إجراء النقر.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>نظام الكتابة</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>نظام الكتابة (أو البرنامج النصي) هو طريقة لتمثيل التواصل اللفظي بشكل مرئي. في حين أن الكتابة والكلام مفيدان في نقل الرسائل ، إلا أن الكتابة تختلف أيضًا في كونها شكلاً موثوقًا به لتخزين المعلومات ونقلها.
+
+تم اتخاذ العديد من الأساليب لتصنيف أنظمة الكتابة ، وأكثرها شيوعًا وأساسيًا هو التقسيم الواسع إلى ثلاث فئات: لوغرافية ، مقطعية وأبجدية. ومع ذلك ، يمكن العثور على الثلاثة في أي نظام كتابة معين بنسب متفاوتة ، مما يجعل من الصعب تصنيف نظام فريد بشكل فريد. الأنواع الوطنية السائدة لأنظمة الكتابة هي: أبجدية - على سبيل المثال نصوص لاتينية وسيريلية ، لوغرافية ومقاطع ، مثل هانزي ، كانا ، هانغول ، أبجد - مثل العربية والعبرية ، والأبجيدا - مثل النصوص الهندية الشمالية والجنوبية ، النصي الإيثيوبي.</value>
+  </data>
+</root>

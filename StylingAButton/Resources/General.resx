@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>A computer font (or font) is a digital data file, containing a set of graphically related glyphs, characters, or symbols. Although the term font first referred to a set of movable metal type pieces in one style and size, since around 1990s it is generally used to refer to a set of digital shapes in a single style, scalable to different sizes.
+A definition from Microsoft describe font as "A graphic design applied to a collection of numbers, symbols, and characters that describes a certain typeface, along with other qualities such as size, spacing, and pitch".
+
+There are three basic kinds of computer font file data formats - bitmap fonts, vector or outline fonts, and stroke fonts.
+
+Outline fonts or vector fonts are collection of vector images, consisting of lines and curves defining the boundary of glyphs. Early vector fonts were used by vector monitors and vector plotters using their own internal fonts, usually with thin single strokes instead of thick outlined glyphs. The advent of desktop publishing brought the need for a universal standard to integrate the graphical user interface of the first Macintosh and laser printers. The universal standard was (and still is) Adobe PostScript. Examples of outline fonts include PostScript Type 1 and Type 3 fonts, TrueType, OpenType.
+
+TrueType is an outline font standard developed by Apple in the late 1980s.
+OpenType is a format for scalable computer fonts. It was build on its predecessor TrueType, retaining TrueType's basic structure and adding many intricate data structures for prescribing typographic behaviour. OpenType is a registered trademark of Microsoft Corporation.</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>The term button in computing, also known as command button, refers to a graphical control element that provides the user with a simple way of interacting with system. Microsoft gives the following definition of a button: "A graphic element that appears similar to physical button or keyboard key in the user interface. A button is "pressed" by clicking on it with a mouse, by hitting Enter or Space on the keyboard, if the button has the focus, or by tapping by a finger (if the display supports it)."
+
+A typical button is a rectangle, wider than it is tall, with a descriptive caption in its center. The most common method of pressing a button is clicking it with a pointer controlled by a mouse, but other input such as keystrokes can be used as well. A button is however not restricted to a rectangular shape. The sole requirement of button interaction is that the user can execute a command by click action.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>Writing system</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>A writing system (or script) is a method of visually representing verbal communication. While both writing and speech are useful in conveying messages, writting differs in also being a reliable form of information storage and transfer. 
+
+Several approaches have been taken to classify writting systems, the most common and basic one is a broad division into three categories: logographic, syllabic and alphabetic. However, all three may be found in any given writing system in varying proportions, often making it difficult to categorise a system uniquely. Predominant national types of writting systems are: alphabetical - for example latin and cyrillic scripts, logographic and syllabic, like hanzi, kana, hangul, abjad - like arabic and hebrew, and abugida- like north and south Indic scripts, ethiopic script.</value>
+  </data>
+</root>

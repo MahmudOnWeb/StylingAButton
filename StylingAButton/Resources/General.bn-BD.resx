@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>ফন্ট</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>একটি কম্পিউটার ফন্ট (বা ফন্ট) একটি ডিজিটাল ডেটা ফাইল যা গ্রাফিকভাবে সম্পর্কিত গ্লাইফস, অক্ষর বা চিহ্নগুলির একটি সেট রয়েছে। যদিও ফন্ট শব্দটি প্রথমে এক স্টাইল এবং আকারে চলমান ধাতব ধরণের টুকরাগুলির সেটকে বোঝায়, 1990 এর দশক থেকে এটি সাধারণত একক স্টাইলে ডিজিটাল আকারের সেটকে বিভিন্ন মাপের স্কেলেবল হিসাবে উল্লেখ করতে ব্যবহৃত হয়।
+মাইক্রোসফ্টের একটি সংজ্ঞা হরফকে বর্ণিত করে "আকার, ব্যবধান এবং পিচের মতো অন্যান্য গুণাবলীর সাথে একটি নির্দিষ্ট টাইপফেস বর্ণনা করে এমন একটি সংখ্যার চিহ্ন, চিহ্ন এবং অক্ষরগুলির সংকলনের ক্ষেত্রে প্রয়োগ করা গ্রাফিক ডিজাইন"।
+
+কম্পিউটার ফন্ট ফাইলের ফরম্যাটগুলির মূল ধরণের তিনটি রয়েছে - বিটম্যাপ ফন্ট, ভেক্টর বা আউটলাইন ফন্ট এবং স্ট্রোক ফন্ট।
+
+আউটলাইন হরফ বা ভেক্টর হরফ হ'ল ভেক্টর চিত্রের সংগ্রহ, লাইন এবং বক্ররেখাকে গ্লাইফের সীমানা নির্ধারণ করে। প্রারম্ভিক ভেক্টর ফন্টগুলি ভেক্টর মনিটর এবং ভেক্টর চক্রান্তকারীরা তাদের নিজস্ব অভ্যন্তরীণ ফন্টগুলি ব্যবহার করে সাধারণত ঘন বর্ণিত গ্লাইফগুলির পরিবর্তে পাতলা একক স্ট্রোক ব্যবহার করে। ডেস্কটপ প্রকাশের উদ্ভব প্রথম ম্যাকিনটোস এবং লেজার প্রিন্টারের গ্রাফিকাল ইউজার ইন্টারফেসকে সংহত করার জন্য সর্বজনীন মানকতার প্রয়োজনীয়তা এনেছিল। সর্বজনীন মানটি ছিল (এবং এখনও রয়েছে) অ্যাডোব পোস্টস্ক্রিপ্ট। আউটলাইন ফন্টগুলির উদাহরণগুলির মধ্যে পোস্টস্ক্রিপ্ট প্রকার 1 এবং প্রকার 3 ফন্ট, ট্রু টাইপ, ওপেন টাইপ অন্তর্ভুক্ত রয়েছে।
+
+ট্রুটাইপ 1980 এর দশকের শেষদিকে অ্যাপল দ্বারা বিকাশ করা একটি বাহ্যরেখা ফন্ট স্ট্যান্ডার্ড।
+ওপেনটাইপ স্কেলযোগ্য কম্পিউটার ফন্টগুলির জন্য একটি ফর্ম্যাট। এটি তার পূর্বসূরি ট্রু টাইপের উপর ভিত্তি করে নির্মিত হয়েছিল, ট্রু টাইপের মূল কাঠামো ধরে রেখেছিল এবং টাইপোগ্রাফিক আচরণ নির্ধারণের জন্য অনেকগুলি জটিল ডেটা কাঠামো যুক্ত করেছিলেন। ওপেনটাইপ মাইক্রোসফ্ট কর্পোরেশনের একটি নিবন্ধিত ট্রেডমার্ক।</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>বোতাম</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>কম্পিউটিং-এ টার্ম বাটন, যা কমান্ড বোতাম নামেও পরিচিত, গ্রাফিকাল নিয়ন্ত্রণ উপাদানকে বোঝায় যা ব্যবহারকারীকে সিস্টেমের সাথে যোগাযোগের সহজ উপায় সরবরাহ করে। মাইক্রোসফ্ট একটি বোতামের নিম্নলিখিত সংজ্ঞা দেয়: "একটি গ্রাফিক উপাদান যা ব্যবহারকারীর ইন্টারফেসে শারীরিক বোতাম বা কীবোর্ড কী এর অনুরূপ প্রদর্শিত হয় A একটি বোতামটি মাউস দিয়ে এটি ক্লিক করে, কীবোর্ডের এন্টার বা স্পেস টিপে" চাপিত হয় ", যদি বোতামটির ফোকাস থাকে, বা একটি আঙুল দিয়ে আলতো চাপ দিয়ে (যদি প্রদর্শনটি সমর্থন করে)।
+
+একটি সাধারণ বোতামটি একটি আয়তক্ষেত্র, এটি দৈর্ঘ্যের চেয়ে প্রশস্ত এবং এর কেন্দ্রে বর্ণনামূলক ক্যাপশন রয়েছে। একটি বোতাম টিপানোর সর্বাধিক প্রচলিত পদ্ধতিটি মাউস দ্বারা নিয়ন্ত্রিত পয়েন্টারটি দিয়ে এটি ক্লিক করছে তবে কীস্ট্রোকের মতো অন্যান্য ইনপুটও ব্যবহার করা যেতে পারে। একটি বোতামটি একটি আয়তক্ষেত্রাকার আকারের মধ্যে সীমাবদ্ধ নয়। বোতাম ইন্টারঅ্যাকশনের একমাত্র প্রয়োজন হ'ল ব্যবহারকারী ক্লিক ক্রিয়াকলাপ দ্বারা একটি আদেশ কার্যকর করতে পারে।</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>তারপর</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>লিপি পদ্ধতি</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>একটি রাইটিং সিস্টেম (বা স্ক্রিপ্ট) হ'ল মৌখিক যোগাযোগের চাক্ষুষভাবে প্রতিনিধিত্ব করার একটি পদ্ধতি। লিখন এবং বক্তৃতা উভয়ই বার্তাগুলি জানাতে কার্যকর, লেখার তথ্য সংরক্ষণ এবং স্থানান্তরের একটি নির্ভরযোগ্য ফর্ম হিসাবে পৃথক।
+
+রাইটিং সিস্টেমগুলিকে শ্রেণিবদ্ধ করার জন্য বেশ কয়েকটি পদ্ধতি নেওয়া হয়েছে, সর্বাধিক সাধারণ এবং মৌলিকটি লোগোগ্রাফিক, পাঠ্যক্রম এবং বর্ণমালা: তিনটি বিভাগে বিস্তৃত বিভাগ। তবে, তিনটিই যে কোনও রাইটিং সিস্টেমে বিভিন্ন অনুপাতে পাওয়া যেতে পারে, প্রায়শই একটি ব্যবস্থাকে অনন্যরূপে শ্রেণিবদ্ধ করা কঠিন করে তোলে। রাইটিং সিস্টেমের মূল জাতীয় পদ্ধতিগুলি হ'ল: বর্ণানুক্রমিক - উদাহরণস্বরূপ লাতিন এবং সিরিলিক স্ক্রিপ্ট, লোগোগ্রাফিক এবং সিলেবিক, যেমন হানজি, কানা, হাঙ্গুল, আবজাদ - আরবিক এবং হিব্রুয়ের মতো, এবং আবুজিডা - উত্তর এবং দক্ষিণ ভারতীয় লিপি, ইথিওপিক স্ক্রিপ্টের মতো।</value>
+  </data>
+</root>

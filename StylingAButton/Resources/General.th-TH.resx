@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>แบบอักษร</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>แบบอักษรคอมพิวเตอร์ (หรือแบบอักษร) เป็นไฟล์ข้อมูลดิจิตอลที่มีชุดของร่ายมนตร์ที่เกี่ยวข้องกับกราฟิกตัวอักษรหรือสัญลักษณ์ แม้ว่าคำว่าฟอนต์จะอ้างถึงชุดของชิ้นส่วนโลหะที่เคลื่อนย้ายได้ในสไตล์และขนาดหนึ่งตั้งแต่ประมาณปี 1990 มันถูกใช้โดยทั่วไปเพื่ออ้างถึงชุดของรูปร่างดิจิตอลในรูปแบบเดียวปรับขนาดได้ตามขนาดต่าง ๆ
+คำจำกัดความจาก Microsoft อธิบายถึงแบบอักษรว่า "การออกแบบกราฟิกที่ใช้กับชุดตัวเลขสัญลักษณ์และอักขระที่อธิบายแบบอักษรบางตัวพร้อมกับคุณสมบัติอื่น ๆ เช่นขนาดระยะห่างและระยะห่าง"
+
+รูปแบบข้อมูลไฟล์แบบอักษรของคอมพิวเตอร์มีสามประเภท ได้แก่ แบบอักษรบิตแมปแบบอักษรแบบเวกเตอร์หรือแบบร่างและแบบอักษรแบบเส้นขีด
+
+แบบอักษรโครงร่างหรือแบบอักษรเวกเตอร์เป็นชุดของภาพเวกเตอร์ประกอบด้วยเส้นและเส้นโค้งที่กำหนดขอบเขตของร่ายมนตร์ แบบอักษรเวกเตอร์แรกเริ่มถูกใช้โดยจอภาพแบบเวกเตอร์และตัวแปลงแบบเวกเตอร์โดยใช้แบบอักษรภายในของตัวเองโดยทั่วไปจะมีลายเส้นเดี่ยวบาง ๆ แทนที่จะเป็นรูปสัญลักษณ์หนา การปรากฎตัวของการเผยแพร่บนเดสก์ท็อปทำให้ต้องมีมาตรฐานสากลเพื่อรวมส่วนต่อประสานผู้ใช้แบบกราฟิกของ Macintosh และเครื่องพิมพ์เลเซอร์เครื่องแรก มาตรฐานสากลคือ (และยังคงเป็น) Adobe PostScript ตัวอย่างของแบบอักษรเค้าร่างรวมถึงแบบอักษร PostScript Type 1 และ Type 3, TrueType, OpenType
+
+TrueType เป็นมาตรฐานตัวอักษรแบบร่างที่พัฒนาโดย Apple ในช่วงปลายทศวรรษ 1980
+OpenType เป็นรูปแบบสำหรับแบบอักษรคอมพิวเตอร์ที่ปรับขนาดได้ มันสร้างบน TrueType รุ่นก่อนโดยรักษาโครงสร้างพื้นฐานของ TrueType และเพิ่มโครงสร้างข้อมูลที่ซับซ้อนจำนวนมากเพื่อกำหนดพฤติกรรมการพิมพ์ OpenType เป็นเครื่องหมายการค้าจดทะเบียนของ Microsoft Corporation</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>ปุ่ม</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>ปุ่มคำในการคำนวณหรือที่เรียกว่าปุ่มคำสั่งหมายถึงองค์ประกอบการควบคุมกราฟิกที่ให้ผู้ใช้มีวิธีที่ง่ายในการโต้ตอบกับระบบ Microsoft ให้คำจำกัดความของปุ่มต่อไปนี้: "องค์ประกอบกราฟิกที่ปรากฏคล้ายกับปุ่มทางกายภาพหรือแป้นคีย์บอร์ดในส่วนต่อประสานผู้ใช้ปุ่ม" กด "โดยคลิกที่มันด้วยเมาส์โดยกดปุ่ม Enter หรือ Space บนแป้นพิมพ์ ถ้าปุ่มนั้นมีโฟกัสหรือแตะด้วยนิ้ว (ถ้าจอแสดงผลรองรับ)
+
+ปุ่มทั่วไปเป็นรูปสี่เหลี่ยมผืนผ้ากว้างกว่าความสูงโดยมีคำบรรยายใต้ภาพ วิธีที่พบมากที่สุดของการกดปุ่มคือการคลิกด้วยตัวชี้ที่ควบคุมโดยเมาส์ แต่อินพุตอื่น ๆ เช่นการกดแป้นก็สามารถใช้งานได้เช่นกัน ปุ่มไม่ได้ถูก จำกัด ให้เป็นรูปสี่เหลี่ยมผืนผ้า ข้อกำหนดเพียงอย่างเดียวของการโต้ตอบของปุ่มคือผู้ใช้สามารถดำเนินการคำสั่งโดยคลิกการกระทำ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>ถัดไป</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>ระบบการเขียน</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>ระบบการเขียน (หรือสคริปต์) เป็นวิธีการแสดงภาพการสื่อสารด้วยวาจา ในขณะที่ทั้งการเขียนและการพูดมีประโยชน์ในการถ่ายทอดข้อความการเขียนต่างกันในรูปแบบที่น่าเชื่อถือในการจัดเก็บและถ่ายโอนข้อมูล
+
+มีวิธีการหลายวิธีในการจำแนกระบบการเขียนซึ่งเป็นวิธีที่พบมากที่สุดและพื้นฐานคือการแบ่งกว้างออกเป็นสามประเภท: logographic พยางค์และตัวอักษร อย่างไรก็ตามทั้งสามอาจพบได้ในระบบการเขียนใด ๆ ในสัดส่วนที่แตกต่างกันบ่อยครั้งทำให้ยากที่จะจัดหมวดหมู่ระบบที่ไม่ซ้ำกัน ประเภทของระบบการเขียนระดับชาติที่โดดเด่นคือ: ตัวอักษร - ตัวอย่างเช่นละตินและสคริปต์ Cyrillic, Logographic และพยางค์เช่น Hanzi, Kana, Hangul, Abjad - เหมือนอาหรับและฮิบรูสคริปต์และสคริปต์เหนือ - ใต้</value>
+  </data>
+</root>

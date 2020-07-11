@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>D:\devdemos\StylingAButton\StylingAButton\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\AccentDemoView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AccentView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BlueprintView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\BlueprintViewDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ColorPaletteDemoView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ColorPaletteView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\InfographicsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\InfographicsViewDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NestedPathsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\NestedPathViewDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StartView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Assets\General.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Shell.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccentDemoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccentView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BlueprintView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\BlueprintViewDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ColorPaletteDemoView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ColorPaletteView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InfographicsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\InfographicsViewDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NestedPathsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\NestedPathViewDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StartView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

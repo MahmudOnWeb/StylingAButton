@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>字体</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>计算机字体（或字体）是一个数字数据文件，其中包含一组图形相关的字形，字符或符号。尽管“字体”一词最初是指一组具有一种样式和尺寸的可移动金属字体，但自1990年代以来，它通常用于指代一种单一样式，可缩放至不同大小的数字形状。
+Microsoft的定义将字体描述为“一种图形设计，该图形设计应用于描述某种字体以及其他质量（例如大小，间距和间距）的数字，符号和字符的集合”。
+
+计算机字体文件数据格式有三种基本类型-位图字体，矢量或轮廓字体和笔划字体。
+
+轮廓字体或矢量字体是矢量图像的集合，由定义字形边界的直线和曲线组成。早期的矢量字体被矢量监视器和矢量绘图仪使用自己的内部字体，通常使用细笔触而不是粗轮廓字形。桌面出版的出现带来了对通用标准的需求，以集成第一台Macintosh和激光打印机的图形用户界面。通用标准是（并且至今）是Adobe PostScript。轮廓字体的示例包括PostScript Type 1和Type 3字体，TrueType，OpenType。
+
+TrueType是Apple在1980年代后期开发的轮廓字体标准。
+OpenType是可缩放计算机字体的格式。它建立在其前身TrueType的基础上，保留了TrueType的基本结构，并添加了许多复杂的数据结构来规定印刷行为。 OpenType是Microsoft Corporation的注册商标。</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>按钮</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>计算中的术语按钮，也称为命令按钮，是指为用户提供与系统进行交互的简单方式的图形控制元素。 Microsoft为按钮提供了以下定义：“在用户界面中显示的外观类似于物理按钮或键盘键的图形元素。通过使用鼠标单击该按钮，并按下键盘上的Enter或Space，可以“按下”该按钮， 如果按钮具有焦点，或者通过手指点击（如果显示器支持它）。”
+
+一个典型的按钮是一个矩形，宽度大于高度，中央带有描述性标题。 按下按钮的最常见方法是使用鼠标控制的指针来单击按钮，但是也可以使用其他输入，例如击键。 然而，按钮不限于矩形。 按钮交互的唯一要求是用户可以通过单击动作来执行命令。</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一步</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>书写系统</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>书写系统（或脚本）是一种可视化表示口头交流的方法。 尽管书写和语音都可用于传达消息，但书面形式还是一种可靠的信息存储和传输形式，因此有所不同。
+
+已经采取了几种方法对书写系统进行分类，最常见和最基本的方法是将书写系统大致分为三类：对数法，音节法和字母法。 但是，在任何给定的书写系统中都可能以不同的比例找到这三种文件，这常常使很难对系统进行唯一地分类。 全国主要的书写系统类型为：字母-例如拉丁字母和西里尔字母，对数字母和音节，如hanzi，kana，hangul，abjad-像阿拉伯和希伯来语，以及abugida-像南北印度字母，埃塞俄比亚文字。</value>
+  </data>
+</root>

@@ -1,0 +1,6 @@
+﻿<Window x:Class="StylingAButton.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Styling a button" Height="864" Width="1536" WindowStartupLocation="CenterScreen">
+    <ContentControl Content="{Binding Selected}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+</Window>

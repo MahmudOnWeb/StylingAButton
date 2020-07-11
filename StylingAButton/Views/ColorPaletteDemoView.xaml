@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="StylingAButton.ColorPaletteDemoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sol="clr-namespace:StylingAButton">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="btvc" />
+    </UserControl.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.47*"/>
+            <ColumnDefinition Width="0.53*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="{Binding General.ComputingButton }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[1]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5" 
+                Template="{StaticResource ColorPaletteTemplate}"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="{Binding General.ComputerFont }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[2]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource ColorPaletteTemplate}"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[3]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource ColorPaletteTemplate}"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="{Binding General.ComputingButton}" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[4]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource ColorPaletteTemplate}"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="{Binding General.ComputerFont }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[5]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource ColorPaletteTemplate}"/>
+        <Button Grid.Row="5" Grid.Column="0" Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[6]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource ColorPaletteTemplate}"/>
+
+        <WrapPanel Grid.Row="6" Grid.Column="0">
+            <Button Content="{Binding General.ComputerFont}" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" 
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" Margin="10,0,10,0" Template="{StaticResource ColorPaletteTemplate}"/>
+            <Button Content="{Binding General.ComputingButton }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" 
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" Margin="0,0,10,0" Template="{StaticResource ColorPaletteTemplate}"/>
+            <Button Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" 
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" Margin="0,0,10,0" Template="{StaticResource ColorPaletteTemplate}"/>
+            <Button Content="{Binding General.Next}" Command="{Binding ChangeViewCommand}" />
+        </WrapPanel>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="PaleVioletRed" BorderThickness="0,0,0,2" Margin="0,0,5,10" Visibility="{Binding ShowLine, Converter={StaticResource btvc}}">
+            <TextBlock Text="{Binding Title}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[1]}" FlowDirection="{Binding CurrentFlow}" HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" TextWrapping="Wrap" />
+        </Border>
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="6" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <TextBlock Text="{Binding Content}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FlowDirection="{Binding CurrentFlow}" TextWrapping="Wrap" Margin="5" />
+        </ScrollViewer>
+    </Grid>
+</UserControl>

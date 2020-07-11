@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>قلم</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>قلم رایانه (یا قلم) یک فایل داده دیجیتالی است ، که شامل مجموعه ای از گلیف ها ، کاراکترها یا نمادهای مرتبط با گرافیکی است. اگرچه اصطلاح قلم برای اولین بار به مجموعه ای از قطعات فلزی متحرک در یک سبک و اندازه اشاره داشت ، از حدود دهه 1990 به طور کلی برای اشاره به مجموعه ای از اشکال دیجیتالی در یک سبک واحد ، مقیاس پذیر با اندازه های مختلف استفاده می شود.
+تعریفی از مایکروسافت قلم را به عنوان "یک طراحی گرافیکی که برای مجموعه ای از اعداد ، نمادها و کاراکترها استفاده می شود که نوع خاصی را توصیف می کند ، همراه با سایر خصوصیات مانند اندازه ، فاصله و زمین" توصیف می کند.
+
+سه نوع اصلی از فرمت داده های پرونده فونت رایانه وجود دارد - قلم های بیت مپ ، قلم های بردار یا طرح کلی ، و قلم های سکته مغزی.
+
+قلمهای رئوس مطالب یا قلمهای برداری مجموعه ای از تصاویر برداری است که شامل خطوط و منحنی هایی است که مرز گلیف ها را تعیین می کنند. قلمهای بردار اولیه توسط مانیتورهای بردار و توطئه گران بردار با استفاده از قلم های داخلی خود ، معمولاً با نوارهای باریک تک بجای گلهای حاشیه ضخیم استفاده می شدند. ظهور نشر رومیزی نیاز به یک استاندارد جهانی را برای ادغام رابط کاربری گرافیکی اولین چاپگرهای Macintosh و لیزر به وجود آورد. استاندارد جهانی Adobe PostScript (و هنوز هم هست) بود. نمونه هایی از قلم های طرحواره ای شامل قلم PostScript Type 1 و Type 3 ، TrueType ، OpenType است.
+
+TrueType یک استاندارد فونت کلی است که در اواخر دهه 1980 توسط اپل ساخته شده است.
+OpenType یک فرمت برای قلم های کامپیوتر قابل مقیاس است. این ساختار بر اساس TrueType سلف خود ساخته شده است و ساختار اصلی TrueType را حفظ کرده و بسیاری از ساختارهای داده پیچیده را برای توصیف رفتار تایپوگرافی اضافه می کند. OpenType یک علامت تجاری ثبت شده از شرکت Microsoft است.</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>دکمه</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>دکمه اصطلاح در محاسبات ، که به عنوان دکمه فرمان نیز شناخته می شود ، به یک عنصر کنترل گرافیکی اشاره دارد که یک روش ساده از تعامل با سیستم را در اختیار کاربر قرار می دهد. مایکروسافت تعریف زیر را از دکمه تعریف می کند: "یک عنصر گرافیکی که شبیه به دکمه فیزیکی یا کلید صفحه کلید در رابط کاربری است. دکمه ای" با فشار دادن آن بر روی ماوس ، با ضربه زدن به Enter یا Space روی صفحه کلید "فشرده می شود" ، اگر دکمه تمرکز دارد ، یا با ضربه زدن به انگشت (اگر صفحه نمایش آن را پشتیبانی می کند). "
+
+یک دکمه معمولی مستطیل ، پهن تر از قد آن است که دارای یک توصیف توصیفی در مرکز آن است. متداول ترین روش فشار دادن یک دکمه ، کلیک بر روی آن با یک اشاره گر است که توسط ماوس کنترل می شود ، اما از ورودی های دیگر مانند کلیدها نیز می توان استفاده کرد. اما یک دکمه به یک شکل مستطیل محدود نمی شود. تنها شرط تعامل دکمه این است که کاربر بتواند یک دستور را با عملکرد کلیک انجام دهد.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>‏‏بعدی</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>سیستم نوشتاری</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>سیستم نوشتن (یا اسکریپت) روشی برای نمایش بصری ارتباط کلامی است. در حالی که نوشتار و گفتار هم در انتقال پیامها مفید هستند ، هم نوشتن یک شکل قابل اعتماد در ذخیره و انتقال اطلاعات است.
+
+رویکردهای مختلفی برای طبقه بندی سیستمهای نوشتاری در نظر گرفته شده است که رایج ترین و اساسی ترین آن تقسیم گسترده به سه دسته است: نقشه نگاری ، هجا و الفبایی. با این وجود ، هر سه مورد ممکن است در هر سیستم نوشتاری با نسبت های مختلفی یافت شوند ، و اغلب دسته بندی یک سیستم منحصر به فرد را دشوار می کند. انواع برتر سیستم های نوشتاری: الفبایی - به عنوان مثال اسکریپت های لاتین و سیریلیک ، نقشه نگاری و هجا مانند هانزی ، کانا ، هانگول ، ابجد - مانند عربی و هباتی ، و abugida- مانند شمال و جنوب اسکریپت های شاخص ، رساله اتیوپیک.</value>
+  </data>
+</root>

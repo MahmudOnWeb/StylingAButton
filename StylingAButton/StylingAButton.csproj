@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Fonts\Amita-Regular.ttf" />
+    <None Remove="Assets\Fonts\Atma-Regular.ttf" />
+    <None Remove="Assets\Fonts\AtomicAge-Regular.ttf" />
+    <None Remove="Assets\Fonts\atwriter.ttf" />
+    <None Remove="Assets\Fonts\din1451alt.ttf" />
+    <None Remove="Assets\Fonts\EBGaramond-Regular.ttf" />
+    <None Remove="Assets\Fonts\HiMelody-Regular.ttf" />
+    <None Remove="Assets\Fonts\Mirza-Regular.ttf" />
+    <None Remove="Assets\Fonts\Montserrat-Regular.ttf" />
+    <None Remove="Assets\Fonts\Nafees Nastaleeq v1.02.ttf" />
+    <None Remove="Assets\Fonts\Rokkitt-Regular.ttf" />
+    <None Remove="Assets\Fonts\Samim.ttf" />
+    <None Remove="Assets\Fonts\Sarabun-Regular.ttf" />
+    <None Remove="Assets\Fonts\SawarabiMincho-Regular.ttf" />
+    <None Remove="Assets\Fonts\SofiaSans-Regular.otf" />
+    <None Remove="Assets\Fonts\Yrsa-Regular.ttf" />
+    <None Remove="Assets\Fonts\ZhiMangXing-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.SDK.Contracts" Version="10.0.19041.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\Amita-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Atma-Regular.ttf" />
+    <Resource Include="Assets\Fonts\din1451alt.ttf" />
+    <Resource Include="Assets\Fonts\EBGaramond-Regular.ttf" />
+    <Resource Include="Assets\Fonts\HiMelody-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Mirza-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Montserrat-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Nafees Nastaleeq v1.02.ttf" />
+    <Resource Include="Assets\Fonts\Rokkitt-Regular.ttf" />
+    <Resource Include="Assets\Fonts\Samim.ttf" />
+    <Resource Include="Assets\Fonts\Sarabun-Regular.ttf" />
+    <Resource Include="Assets\Fonts\SawarabiMincho-Regular.ttf" />
+    <Resource Include="Assets\Fonts\SofiaSans-Regular.otf" />
+    <Resource Include="Assets\Fonts\Yrsa-Regular.ttf" />
+    <Resource Include="Assets\Fonts\ZhiMangXing-Regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\General.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>General.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\General.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>General.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>StylingAButton</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

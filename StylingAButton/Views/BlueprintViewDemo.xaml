@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="StylingAButton.BlueprintViewDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sol="clr-namespace:StylingAButton">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="btvc" />
+    </UserControl.Resources>
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0,1" EndPoint="1,0">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                        <GradientStop Color="#FF2D68BF" Offset="0.275" />
+                        <GradientStop Color="#FF2670DE" Offset="0.75" />
+                        <GradientStop Color="#7F154C9E" Offset="1" />
+                    </GradientStopCollection>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.47*"/>
+            <ColumnDefinition Width="0.53*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0" Content="{Binding General.ComputingButton }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[1]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5" 
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+        <Button Grid.Row="1" Grid.Column="0" Content="{Binding General.ComputerFont }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[2]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[3]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="{Binding General.ComputingButton}" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[4]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="{Binding General.ComputerFont }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[5]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+        <Button Grid.Row="5" Grid.Column="0" Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[6]}" 
+                FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,5,0,5"
+                Template="{StaticResource BlueprintTemplate}" FocusVisualStyle="{x:Null}"/>
+
+        <WrapPanel Grid.Row="6" Grid.Column="0">
+            <Button Content="{Binding General.ComputerFont}" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FocusVisualStyle="{x:Null}"
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Font}" Margin="10,0,10,0" Template="{StaticResource BlueprintTemplate}"/>
+            <Button Content="{Binding General.ComputingButton }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FocusVisualStyle="{x:Null}"
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.Button}" Margin="0,0,10,0" Template="{StaticResource BlueprintTemplate}"/>
+            <Button Content="{Binding General.WritingSystem }" Command="{Binding DemoCommand}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FocusVisualStyle="{x:Null}"
+                    FlowDirection="{Binding CurrentFlow}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" Margin="0,0,10,0" Template="{StaticResource BlueprintTemplate}"/>
+            <Button Content="{Binding General.Next}" Command="{Binding ChangeViewCommand}" />
+        </WrapPanel>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="White" BorderThickness="0,0,0,2" Margin="0,0,5,10" Visibility="{Binding ShowLine, Converter={StaticResource btvc}}">
+            <TextBlock Text="{Binding Title}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[1]}" FlowDirection="{Binding CurrentFlow}" HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White"/>
+        </Border>
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="6" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <TextBlock Text="{Binding Content}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FlowDirection="{Binding CurrentFlow}" TextWrapping="Wrap" 
+                       Margin="5" Foreground="White" />
+        </ScrollViewer>
+        
+        <Path Name="pathWhiteGrid" StrokeThickness="0.5" Stroke="#FFFFFFFF" Stretch="Fill" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="7">
+            <Path.Data>
+                <PathGeometry Figures="M 25.891485 220.07762 152.90002 0.09238731 M 0.13229167 207.56564 H 406.26773 v 12.96459 H 0.13229167 Z m 0 -12.96459 H 406.26773 v 12.96459 H 0.13229167 Z m 0 -12.96458 H 406.26773 v 12.96458 H 0.13229167 Z m 0 -12.96459 H 406.26773 v 12.96459 H 0.13229167 Z m 0 -12.96458 H 406.26773 v 12.96458 H 0.13229167 Z m 0 -12.96459 H 406.26773 V 155.7073 H 0.13229167 Z m 0 -12.96458 H 406.26773 v 12.96458 H 0.13229167 Z m 0 -12.96459 H 406.26773 v 12.96459 H 0.13229167 Z m 0 -12.96458 H 406.26773 v 12.96458 H 0.13229167 Z m 0 -12.964584 H 406.26773 V 103.84896 H 0.13229167 Z m 0 -12.964583 H 406.26773 V 90.884376 H 0.13229167 Z m 0 -12.964584 H 406.26773 V 77.919793 H 0.13229167 Z m 0 -12.964583 H 406.26773 V 64.955209 H 0.13229167 Z m 0 -12.964584 H 406.26773 V 51.990626 H 0.13229167 Z m 0 -12.964583 H 406.26773 V 39.026042 H 0.13229167 Z m 0 -12.964584 H 406.26773 V 26.061459 H 0.13229167 Z m 0 -12.96458349 H 406.26773 V 13.096875 H 0.13229167 Z m 388.93747833 -10e-9 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96459 0 h 12.96459 V 228.46773 h -12.96459 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 H 298.3177 Z m -12.96458 0 H 298.3177 V 228.46773 h -12.96458 z m -12.96459 0 h 12.96459 V 228.46773 h -12.96459 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96459 0 h 12.96459 V 228.46773 H 220.5302 Z m -12.96458 0 H 220.5302 V 228.46773 h -12.96458 z m -64.82291 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96459 0 h 12.96459 V 228.46773 h -12.96459 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m 90.75208 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -12.96459 0 h 12.96459 V 228.46773 h -12.96459 z m -12.96458 0 h 12.96458 V 228.46773 h -12.96458 z m -64.822914 0 H 103.84896 V 228.46773 H 90.884376 Z m -12.964583 0 H 90.884376 V 228.46773 H 77.919793 Z m -12.964584 0 H 77.919793 V 228.46773 H 64.955209 Z m -12.964583 0 H 64.955209 V 228.46773 H 51.990626 Z m -12.964584 0 H 51.990626 V 228.46773 H 39.026042 Z m -12.964583 0 H 39.026042 V 228.46773 H 26.061459 Z m -12.964584 0 H 26.061459 V 228.46773 H 13.096875 Z m -12.96458333 0 H 13.096875 V 228.46773 H 0.13229167 Z M 404.34023 1.5801288 25.891485 220.07762 244.89029 1.0788142 M 191.94777 0.87808099 Z M 205.44398 -1.2257 Z" FillRule="NonZero"/>
+            </Path.Data>
+        </Path>
+    </Grid>
+</UserControl>

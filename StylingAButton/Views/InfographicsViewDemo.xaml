@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="StylingAButton.Views.InfographicsViewDemo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:sol="clr-namespace:StylingAButton">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="btvc" />
+    </UserControl.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.47*"/>
+            <ColumnDefinition Width="0.53*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.2*" />
+            <RowDefinition Height="0.4*" />
+        </Grid.RowDefinitions>
+
+        <Viewbox Grid.Column="0" Grid.Row="0" Grid.RowSpan="3">
+            <Grid>
+                <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Button}" Template="{StaticResource InfographicsOneTemplate}" FocusVisualStyle="{x:Null}" 
+                        Content="{Binding General.ComputingButton }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}" />
+                <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Font}" Template="{StaticResource InfographicsTwoTemplate}" FocusVisualStyle="{x:Null}" 
+                        Content="{Binding General.ComputerFont }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" Template="{StaticResource InfographicsThreeTemplate}" FocusVisualStyle="{x:Null}" 
+                        Content="{Binding General.WritingSystem }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+            </Grid>
+        </Viewbox>
+
+        <Grid Grid.Row="4" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="0.3*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="0.3*" />
+            </Grid.RowDefinitions>
+
+            <Viewbox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+                <Grid>
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Button}" Template="{StaticResource InfographicsOneTemplate}" FocusVisualStyle="{x:Null}" 
+                            Content="{Binding General.ComputingButton }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}" />
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Font}" Template="{StaticResource InfographicsTwoTemplate}" FocusVisualStyle="{x:Null}" 
+                            Content="{Binding General.ComputerFont }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" Template="{StaticResource InfographicsThreeTemplate}" FocusVisualStyle="{x:Null}" 
+                            Content="{Binding General.WritingSystem }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                </Grid>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="0">
+                <Grid>
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Button}" Template="{StaticResource InfographicsOneTemplate}" FocusVisualStyle="{x:Null}"
+                            Content="{Binding General.ComputingButton }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.Font}" Template="{StaticResource InfographicsTwoTemplate}" FocusVisualStyle="{x:Null}"
+                            Content="{Binding General.ComputerFont }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                    <Button Command="{Binding DemoCommand}" CommandParameter="{x:Static sol:DemoTopics.WritingSystem}" Template="{StaticResource InfographicsThreeTemplate}" FocusVisualStyle="{x:Null}" 
+                            Content="{Binding General.WritingSystem }" FontFamily="{Binding CurrentFont}" FlowDirection="{Binding CurrentFlow}"/>
+                </Grid>
+            </Viewbox>
+
+            <Button Content="{Binding General.Next}" Command="{Binding ChangeViewCommand}" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
+        
+        <Border Grid.Row="0" Grid.Column="1" BorderBrush="PaleVioletRed" BorderThickness="0,0,0,2" Margin="0,0,5,10" Visibility="{Binding ShowLine, Converter={StaticResource btvc}}">
+            <TextBlock Text="{Binding Title}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[1]}" FlowDirection="{Binding CurrentFlow}" HorizontalAlignment="Center" 
+                       VerticalAlignment="Center" TextWrapping="Wrap"/>
+        </Border>
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="6" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Hidden">
+            <TextBlock Text="{Binding Content}" FontFamily="{Binding CurrentFont}" FontSize="{Binding HeaderSizes[0]}" FlowDirection="{Binding CurrentFlow}" TextWrapping="Wrap" 
+                       Margin="5" />
+        </ScrollViewer>
+    </Grid>
+</UserControl>

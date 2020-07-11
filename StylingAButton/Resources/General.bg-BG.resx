@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ComputerFont" xml:space="preserve">
+    <value>Шрифт</value>
+  </data>
+  <data name="ComputerFontContent" xml:space="preserve">
+    <value>Компютърният шрифт (или шрифт, използва се и фонт) e цифров файл с информация, съдържащ набор от графично свързани глифове, букви или символи. Терминът шрифт се среща за първи път когато става дума за набор от подвижни метални парчета оформени в свой стил и размер, като след 90-те години обикновено се използва за обозначаване на набор от цифрови форми в един стил, мащабируем до различни размери. Дефиницията на Майкрософт описва шрифта като "графичен дизайн, приложен към колекция от цифри, символи, и букви, който описва определена типографика, заедно с други качества като размер, отстояние и височина".
+
+Има три основни типа информационни формати за компютърните шрифтове - растерни шрифтове, векторни или още контурни шрифтове и шрифтове с щрихи.
+
+Контурните или векторните шрифтове са набор от векторни изображения, състоящи се от линии и криви, определящи границите на глифовете. Ранните векторни шрифтове са били използвани от векторни монитори и плотери, имащи собствени шрифтове, обикновено с тънки единични щрихи вместо дебели очертани глифове. С навлизането на компютърното публикуване се появява и необходимостта от универсален стандарт за интегриране на графичния потребителски интерфейс на първите компютри Macintosh и на лазерните принтери. Универсалният стандат е бил (и все още е) Adobe PostScript. Контурни шрифтове са например PostScript Type 1 и Type 3, TrueType, OpenType.
+
+TrueType е стандарт за контурни шрифтове, разработен от Apple в края на 80-те.
+OpenType е формат за мащабируеми компютърни шрифтове. Създаден е на основата на TrueType, като запазва основната структура на TrueType и добавя много нови сложни информационни структури за предписване на типографско поведение. OpenType е регистрирана търговска марка на корпорацията Microsoft.</value>
+  </data>
+  <data name="ComputingButton" xml:space="preserve">
+    <value>Бутон</value>
+  </data>
+  <data name="ComputingButtonContent" xml:space="preserve">
+    <value>В информатиката терминът бутон, известен още като команден бутон, се отнася до графичен елемент за управление, който предоставя на потребителя прост начин за взаимодействие със системата. Microsoft дава следното определение за бутон: "Графичен елемент, който изглежда подобно на физически бутон или клавиатурен клавиш в потребителския интерфейс. Бутонът се "натиска" с щракане на мишка, с натискане на клавиша Въведи или клавиша интервал, ако фокусът е върху бутона, или чрез докосване с пръст (ако дисплеят го поддържа)."
+
+Типичният бутон е правоъгълник, по-широк отколкото висок, с описателен надпис в центъра. Най-често срещният метод за натискане на бутон е щракването с курсора на мишката, но може да се използва и друг метод, като например натискане на определени клавиши. Бутонът не е ограничен до правоъгълна форма. Единственото изискване за бутон е взаимодействието с него да става чрез щракане или кликане с мишката.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Карай нататък</value>
+  </data>
+  <data name="WritingSystem" xml:space="preserve">
+    <value>Писмена система</value>
+  </data>
+  <data name="WritingSystemContent" xml:space="preserve">
+    <value>Систeмата за писане (или скрипт) е метод за визуално представяне на вербалната комуникация. Макар, че както писането, така и речта са полезни за предаване на съобщения, писането се различава по това, че е надеждна форма за съхранение и пренос на информация.
+
+Има предприети няколко подхода за класифициране на писмените системи, като най-разпространеният и основен метод е разделянето на три категории: логографски, сричкообразуващи и азбучни. Въпреки това, и трите могат да се срещат във всяка дадена система за писане в различни пропорции, което често затруднява еднозначното катогоризиране на системата. Преобладаващите национални видове системи за писане са: азбучни - например латиница и кирилица, логографски и сричкообразуващи - ханзи, кана, хангул, абиджад - арабски и иврит, абудига - като северните и южните индийски писмености, а и етиопската писменост.</value>
+  </data>
+</root>
