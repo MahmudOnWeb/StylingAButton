@@ -17,7 +17,7 @@
    - [ Choosing a color palette](#Choosing-a-color-palette)
    - [ Making simple layout for easier styling](#Making-simple-layout-for-easier-styling)
    - [ Making a control template](#Making-a-control-template)
-   - [ Live preview: end of part two](#Live-preview:-end-of-part-two)
+   - [ Live preview end of part two](#Live-preview-end-of-part-two)
 - [ Part Three Meet Inkscape Otherwise similar to part two but we change Foreground and style Focuses state](#Part-Three-Meet-Inkscape-Otherwise-similar-to-part-two-but-we-change-Foreground-and-style-Focuses-state)
    - [ Inkscape](#Inkscape)
    - [ Making the grid in Inkscape](#Making-the-grid-in-Inkscape)
@@ -26,15 +26,15 @@
    - [ Focused state](#Focused-state)
    - [ Making of control template](#Making-of-control-template)
    - [ Live preview end of part three](#Live-preview-end-of-part-three)
-- [ Part Four Buttons and "Windows ?!" colors Hello Animation](#Part-Four-Buttons-and-"Windows ?!"-colors-Hello-Animation)
+- [ Part Four Buttons and Windows colors Hello Animation](#Part-Four-Buttons-and-Windows-colors-Hello-Animation)
    - [ Getting Accent color and Accent color palette](#Getting-Accent-color-and-Accent-color-palette)
    - [ Animation More to come in following parts](#Animation-More-to-come-in-following-parts)
    - [ Live preview end of part four](#Live-preview-end-of-part-four)
-- [ Part Five More paths more Inkscape](#Part-Five-More-paths -more-Inkscape)
+- [ Part Five More paths more Inkscape](#Part-Five-More-paths-more-Inkscape)
    - [ Making paths in Inkscape](#Making-paths-in-Inkscape)
    - [ Adding some complications to our drawings](#Adding-some-complications-to-our-drawings)
-   - [ How should our shape change, when button is focused? Or users hover over it?](#How-should-our-shape-change,-when-button-is-focused?-Or-users-hover-over-it?)
-   - [ Making our drawing a single path, so that it is easily used in Blend](#Making-our-drawing-a-single-path,-so-that-it-is-easily-used-in-Blend)
+   - [ How should our shape change when button is focused Or users hover over it](#How-should-our-shape-change-when-button-is-focused-Or-users-hover-over-it)
+   - [ Making our drawing a single path so that it is easily used in Blend](#Making-our-drawing-a-single-path-so-that-it-is-easily-used-in-Blend)
    - [ Using created paths in buttons](#Using-created-paths-n-buttons)
    - [ Making the control template](#Making-the-control-template)
    - [ Making the demo view](#Making-the-demo-view)
@@ -70,11 +70,11 @@ This article was made at the start of summer of 2020, so corresponding versions 
 * Inkscape, Open Source Scalable Vector Graphics Editor. Draw freely. Available from inkscape website. Will be used in part three, five and six
 * Microsoft.Windows.SDK.Contracts NuGet. It is used only in part four for getting the Windows 10 Accent and Accent Color Palette colors (no, WindowsGlassBrush cannot do that, not for palette colors)
 
-## Part One: foundation, localization and custom fonts
+## Part One foundation localization and custom fonts
 
 In this part we will create some basics, so that we have a working application, where we can see in action control templates, applied to buttons, an application, where we can see our styling in action. As entire source code is available, instead of detailed step by step instructions more general explanation will be used.
 
-### Making simple solution. ContentControl, INotifyPropertyChanged and ICommand implementations
+### Making simple solution ContentControl INotifyPropertyChanged and ICommand implementations
 
 We create a WPF solution, targeting .NET core 3.1. We rename the `MainWindow.xaml` to Shell, set width and height to 1 526 and 864 px. We are not going to deal with scaling in this article, so no measuring of text and dynamic changes of font sizes. In `Shell.xaml` there will be only a content control, and its Content property will be bind to a property in our main view model. We will change the content and this way perform the navigation.
 We have to implement a Base view model. It has to implement `INotifyPropertyChanged` interface. In our implementation a property for providing localization via View Model binding is added, as this approach is dynamic and easy to use. We also have to provide an implementation of `ICommmand` interface. Our implementation is called Simple command. We create the following folders - Assets, inside it we create folders Fonts and Licences. We also add a resource dictionary file called `General.xaml` in this folder. Then, we create folder Resources and folder Views.
@@ -83,7 +83,7 @@ We have to implement a Base view model. It has to implement `INotifyPropertyChan
 
 We are going to use different fonts with different writing systems, so that we can see the impact of font and font sizes in practice. Choosing a specific font is already a styling and can have a great impact of the UI. Some general terms - computer font, computing button, writing system and part of their description, taken from Wikipedia are going to be displayed on part of the screen on every button click, so that we acknowledge this user action. Those texts are machine translated on several languages. For every language and specific country code a separate resource file is added. Our main file is called `General.resx` and content there uses United States English, en-US. File is placed in Resources folder. Then, the content is translated to Arabic and a file called `General.ar-Sa.resx` is added to Resource folder. Then, the content is translated to Bulgarian and a file called `General.bg-BG.resx` is added. And so on and so forth for all remaining translations. Finally, we specify a custom namespace for `General.resx` - `StylingAButton`. We confirm it and then run the custom tool to update code-behind for resource.
 
-### Typefaces. Fonts. Cultures. Languages.
+### Typefaces Fonts Cultures  Languages
 
 For every language we are going to use there will be specific font as well. Below you can see the languages, two letter language code and two letter country code, specified for every language, and the font used for it. We add fonts to Fonts folder. We specify Build Action for each of them to <b>Resource</b>
 
@@ -121,12 +121,12 @@ Next button works with `ChangeViewCommand`. Available views are enumerated in `V
 Our view model contains properties for font sizes, current font family and flow direction, as well as for header and content of demo topics. Platform invoke calls for measuring the actual window size and consequent font scaling, measuring of text lengths and other similar stuffs are not part of the demo application.
 Pay attention to the switch statement used and usage of only one view model. Those are good for this demo application. What will happen if you try to add (much) more functionality to those? Probably it will become difficult to work with and tedious to maintain. So what is good for a demo application might not be good for more sophisticated one.
 
-### Live preview: end of part one
+### Live preview end of part one
 
 We are ready with part one. This is how it looks in action. We have made a good foundation for future parts.
 ![Live preview - part one](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part01.gif?raw=true)
 
-## Part Two: Styling using a color palette. Visual States instead of triggers
+## Part Two Styling using a color palette Visual States instead of triggers
 
 From this point forward we are going to use Microsoft Blend as editor. It is more convenient to work when it comes to styling of controls. We will use the Visual studio solution we created earlier. 
 
@@ -147,7 +147,7 @@ For "Mouse over" button we specify #FFFFA9A3 as background, for border brush we 
 For "Pressed" button we specify #FFF87575 as background, for border brush we specify black, 1pt thickness, and foreground stays the same as before.
 For "Disabled" button we specify #FF7E6C6C as background, for border brush we specify `LightGray`, 1pt thickness. Foreground stays the same.
 We build and run the application and just look at the styled buttons, all in normal state, but some of them looking like they are in other states. If we like what we see, we continue forward. If not, we tune the colors again and again until happy. As we agreed earlier, we will pretend that generated colors are OK.
-![Styled buttons](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02-ButtonsStyledView.png?raw=true)
+![Styled buttons](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02-ButtonsStyledView.PNG)
 
 ### Making a control template
 
@@ -160,7 +160,7 @@ and if you don't follow the steps at least closely, you will not see the error m
 Now we just have to tune the control template and specify the basic styling we have made earlier in article for all states in Common states visual state group. We will remove the dummy opacity change storyboard we generated earlier and we make our own storyboards, so that we properly change the appearance of button in every state. Also, we wil remove the grid and instead use border as container. We will place a content presenter inside the border, sot that we are able to see our text. It remains to handle one more thing. We want to change the `Background` and `Border` color when button is in some state. Both properties requires not a color, but a brush. So, we have to define some brushes, based on colors we have generated, and use them in our control template. We will define those brushes <b>inside</b> control template. So, afte all those changes, our control template is ready. We have to make sure it is a proper control template, so we build and run the application, then we navigate to Color palette view and check that our button behaves like expected. 
 In paragraphs before, we have created a control template, which is applied to only one button and it is defined inside the markup of the user control, where this button is used. We want to recreate the layout from Start view, but this time having all button styled using the control template we just created. So, we will copy the control template and place it inside `Generic.xaml` file with the key `ColorPaletteTemplate`, so that it is available through entire application. Then we create the view called `ColorPaletteDemoView`. This view will have the exact markup of Start view, with only difference being that all buttons will use the `ColorPaletteTemplate` via their `Template` property and refer to it as a static resource. Finally, we have to update the navigation part in our main view model, so that it accounts for newly added views, and update `ViewsForDisplay` enum as well.
 
-### Live preview: end of part two
+### Live preview end of part two
 
 We are ready with this part and we have styled our first buttons.Good job, although styling have few issues. Let's have a look at our current application
 ![Live preview - part two](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02.gif?raw=true)
@@ -188,7 +188,7 @@ We will not make labels and other stuffs that a real measured grid paper might h
 We are almost ready. We have to make sure that entire mesh/grid is a single path. We need one path only. So we select all current shapes and combine them, so that we have only one big shape. Then we save the file in default svg format at some convenient place. It is available as Inkscape svg file in drawings folder.
 Then, we save the file again as a XAML file, so that Inkscape generate XAML for us. So we select <b>File->Save as</b> and we select Microsoft XAML in Save as type field. We confirm with save. We don't want to be Silverlight compatible. Finally, we open the newly saved XAML with a text editor and look at the content. If we did well in previouis steps, there should be only one path with some path geometry.
 
-### Back to Blend. Designing buttons, suitable for blueprint
+### Back to Blend Designing buttons suitable for blueprint
 
 We are going to create two views, in a similar manner as in previous post. One view will be for detailed design of a button and other view will be the demo. First view will be called `BlueprintView` and it will have three rows and three columns, having buttons in most of cells, and the second view will be called `BlueprintDemoView`. Background color of both views will be simple gradient, and the path geometry we generated earlier will be placed insite the user control's grid as well, spreading through every row and column. 
 
@@ -217,7 +217,7 @@ We have come to the end of this part as well. Now it is time to add the control 
 ![Live preview - part three](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part03.gif?raw=true)
 And we are ready with this part. Good job! Buckle up, we are not ready with this article yet. Prepare to meet part four, where we finally do some animations!
 
-## Part Four: Buttons and "Windows" ?! colors. Hello Animation
+## Part Four Buttons and Windows colors Hello Animation
 
 Amongst Windows operating systems two versions has the biggest market share, again according to Net Marketshare website. Those are Windows 10 and Windows 7. As support for Windows 7 ended on January 14, 2020, it is clear what is the main Windows OS now. This article was written under Windows 10 via Libre Office products.
 It might not be entirely true, but we can say that for the few latest major Windows released, there is a new .NET UI framework provided by Microsoft for making (easier) native windows applications. Of course, there are many ways to do such applications, you can develop such software using C and Windows SDKs, most popular applications like (former) Microsoft Office, Adobe Creative Suite, Google Chrome were all build this way, using the same Win32 API. However, this is very, very difficult. So here come the .NET framework and WinForms, WPF and now UWP. We can pair WinForms with Windows XP, WPF with Windows 7 and UWP with Windows 10. We have a `SystemColors` class from `System.Drawings` namespace, we have `SystemColors` class from `System.Windows` namespace, and for UWP and Windows 10 we have Accent color palette, together with light and dark theme.
@@ -249,7 +249,7 @@ For Accent demo view we are not going to place `AccentButtonTemplate` in our `Ge
 
 ![Live preview - part four](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part04.gif?raw=true)
 
-## Part Five: More paths, more Inkscape
+## Part Five More paths more Inkscape
 
 We have already meet Inkscape, a tool for making vector graphics, and we have have made simple drawing with it. Now it is time to make few more paths and try to style a button using those paths. Here your creativity can shine and you can achieve great things. We will try to make something simple, but still something that cannot be so easily achieved using Microsoft Blend. Something simple enough is making several nested circumferences or rounded rectangles - they will be more convenient as we have to display text for buttons. Then we can remove some parts of those and achieve a different look, they will look like different elements.
 
@@ -268,12 +268,12 @@ So we draw a new, smaller rectangle, like a segment, over part of existing one. 
 Following this approach, we remove parts of all nested rectangles and finally we make a new design. If we can add few imperfections, something that can be done only by humans, even better. This is what we have done so far. We save it under different name, we will need it later. We will refer to it as Normal.
 ![Normal segments](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part05-Normal.png?raw=true)
 
-### How should our shape change, when button is focused? Or users hover over it?
+### How should our shape change when button is focused Or users hover over it
 
 We have to figure out and then implement small changes in shapes of our figures, so that they look interactive. What if we do this, but not that? Here your creativity can shine. We will however try to do something simple. We will just move all parts closer to the center, on X and Y axis, and position all parts closer together. Parts, or segments of former rectangles, located in top left corner will move down and to the right, parts located in bottom right corner will move up and to the left. Nearest to the center will move less, and those far apart will move more. Once we are ready with our changes, we finally save the file again under different name. We will refer to it as Focused.
 ![Focused segments](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part05-Focused.png?raw=true)
 
-### Making our drawing a single path, so that it is easily used in Blend
+### Making our drawing a single path so that it is easily used in Blend
 
 We close all open instances of Inkscape (wow) if any, and we then open the file we saved earlier and referred as Normal. We Shift click all four parts with same color and we go to <b>Path -> Combine</b>. Then, with current selection active we go to <b>Object -> Object Properties</b>. We specify some ID for this path, for example outer. We do the same for remaining two groups, and we call them middle and inner. Now we can optionally save in Inkscape defalt svg, but then we need to save is as XAML as well. We look at the created markup and we confirm that there are three paths named outer, middle and inner. 
 We close Inkscape and open the file we refer as Focused. We do similar actions and finally we end up with a markup, having slightly different geometries. We can name them in a way that it is easier for us to differentiate and not get confused with initial three ones. Our job with Inkscape for this part is done. Time to go back to Blend.
