@@ -327,8 +327,8 @@ We create the usual two views, one for easier design and other for demo view, `N
 ### Making the control template
 
 We create the `ButtonTemplateNestedPaths` following the same approach, which we have used so far in this article. Because we do not change our geometry resources, it is not necessary to create copies of them in control template. It would not hurt us either, if we do so.
-* On mouse over stroke will become thicker, from 10 to 20. Mouse over is usually triggered only when users hover over some of the paths or content presenter itself. They can however point to empty space in the button and this way state would not change to mouse over. To avoid this effect, we add a rectangle, stretching through entire grid with transparent background. When mouse cursor is ove this rectangle, the state will always change to mouse over.</p>
-* On pressed there will be short scale animation on X and Y, scaling from 1.2 till 0.7 and back to 1, for about 250 ms. In same time there will be change in the path, for about 100 ms.</p>
+* On mouse over stroke will become thicker, from 10 to 20. Mouse over is usually triggered only when users hover over some of the paths or content presenter itself. They can however point to empty space in the button and this way state would not change to mouse over. To avoid this effect, we add a rectangle, stretching through entire grid with transparent background. When mouse cursor is ove this rectangle, the state will always change to mouse over.
+* On pressed there will be short scale animation on X and Y, scaling from 1.2 till 0.7 and back to 1, for about 250 ms. In same time there will be change in the path, for about 100 ms.
 * For disabled we make all path colors gray, together with Foreground change of content presenter.
 * For focused we change the paths from normal to focused shape, as we create them in Inkscape. Our button is so heavily changed, so the usual dashed border around it would not be appropriate.
 
