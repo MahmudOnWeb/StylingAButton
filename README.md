@@ -60,6 +60,7 @@
 <p>My understanding of styling is that it should be very simple, but still has to cover the basics and be properly made. When dealing with buttons in an application, working under Windows OS, there are some visual states, in which those buttons can be - normal, (keyboard) focused, mouse over, clicked or using the exact term <b>pressed</b>, to name a few, and unfocused, disabled to name few more and say there are even more states. We want to cover the most used states, so that our buttons look natural. We want that buttons look good when different fonts and different sizes are used for the content, if any. We will try to not use margins, paddings and any hard-coded "sizes" in control template, but however sometimes this would not be possible. Advanced effects like ripple are not demonstrated here.
 This article consists of several parts. In first part, we lay out foundation for forther parts, but we actually do not style any buttons. We are going to use different fonts, different writing systems, different flow directions and even only this changes the visual appearance of the application in a massive way. We are going to implement basic functionality for the application, so that in further parts we deal mainly with styling. Layout of buttons and text is specifically tuned to show different button sizes with some spacing around them, or a typical position of several buttons next to each other, and it is not intended to be an appealing user interface. It is a working application intended to make button styling easier. I am saying this in case someone read the article and then complain about breaking some UI principles. In each of the following parts we are going to follow a certain approach and style buttons in certain way.</p>
 <p>The article does not show anything new, neither is intented to demonstrate best techniques. Some of proposed styling might be acceptable for some cases, but not for all. It is up to you to decide. This article is not a collection of super knowledge, contained in several short paragraphs, together with trendy terms. This is step by step article, that demonstrates some approaches, so it will require some time and efforts to follow. This gif, made with Screet to Gif, shows finished demo application in action:</p>
+
 ![Ready demo application](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part06Final.gif?raw=true)
 
 ## Prerequisites to follow the article
@@ -106,6 +107,7 @@ In this part we will create some basics, so that we have a working application, 
 | Simplified Chinese (zh-CN) | Zhi Mang Xing |
 
 <p>The resource dictionary `General.xaml`, which we have created earlier, is going to be used now. For every font we have added, we create a Font family key, containing the path to the font resource. Font name should be specified properly. A convenient way to see a font name is by using Windows Font Viewer application, usually a default app for opening a font. If there are spaces in font name, then we specify it with spaces. An example:</p>
+
 ``` xaml
 <FontFamily x:Key="DinMittelschrift">pack://application:,,,/Assets/fonts/#Alte DIN 1451 Mittelschrift</FontFamily>
 ```
@@ -147,14 +149,17 @@ Choosing proper colors for an application depends on many things. In order to si
 * For "Pressed" button we specify #FFF87575 as background, for border brush we specify black, 1pt thickness, and foreground stays the same as before.
 * For "Disabled" button we specify #FF7E6C6C as background, for border brush we specify `LightGray`, 1pt thickness. Foreground stays the same.
 <p>We build and run the application and just look at the styled buttons, all in normal state, but some of them looking like they are in other states. If we like what we see, we continue forward. If not, we tune the colors again and again until happy. As we agreed earlier, we will pretend that generated colors are OK.</p>
+
 ![Styled buttons](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02-ButtonsStyledView.PNG)
 
 ### Making a control template
 
 <p>This is probably the most important piece of this part. So we are going to walk on it step by step. First, we specify the same properties for "Ready" button, as we did for the normal one. Then, in Microsoft Blend we select Design instead of XAML view for editor if already not selected. We select Ready button, if not selected, and right click on it. From the context menu we choose <b>Edit Template -> Create empty.</b></p>
 <p>In Create control template resource dialog we specify the name `ButtonTemplateColorPalette` and confirm with OK. We can go to XAML view to see that template has been created. Then back to Design view. The ready button is gone, an empty template is now placed on its place. However, it is still selected. In upper left corner of the designer it says <b>Button -> Grid</b>. Meanwhile, if you have clicked on something else and the selection is the grid inside the generated control template, make sure you select it again. We will trick Blend to generate some visual states for us. We select States window, looking like dock panel. If it is not visible, we can show it by <b>View -> States window</b>.</p>
+
 ![States window](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02-StatesWindowPanel.png?raw=true)
 <p>We select Normal state and it automatically turn recording on. Now, let's change some of the properties just to make Blend generating more content for us. I usually change the `OpacityMask` to some color and later delete it, after recording is off. If you have followed the steps exactly, you might see an error message like this:</p>
+
 ![Error Message](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part02-ErrorMessage.png?raw=true)
 <p>and if you don't follow the steps at least closely, you will not see the error message, and it will still work fine. Anyway, error message or no error message, don't bother with it, confirm with OK, we are going to be fine. Now we stop the recording and we go to XAML view. We see the control template, coourtesy of Microsoft Blend. As we say earlier, we do not touch the position of Visual state manager in XAML markup.</p>
 <p>Now we just have to tune the control template and specify the basic styling we have made earlier in article for all states in Common states visual state group. We will remove the dummy opacity change storyboard we generated earlier and we make our own storyboards, so that we properly change the appearance of button in every state. Also, we wil remove the grid and instead use border as container. We will place a content presenter inside the border, sot that we are able to see our text. It remains to handle one more thing. We want to change the `Background` and `Border` color when button is in some state. Both properties requires not a color, but a brush. So, we have to define some brushes, based on colors we have generated, and use them in our control template. We will define those brushes <b>inside</b> control template. So, afte all those changes, our control template is ready. We have to make sure it is a proper control template, so we build and run the application, then we navigate to Color palette view and check that our button behaves like expected. </p>
@@ -186,6 +191,7 @@ We start Inkscape and go to <b>File -> Document properties</b>. We select displa
 <p>We can combine those four and make them one path again. And duplicate and move. At some point our one path many bars will become big enough and we should <b>Break it appart</b>, in similar manner as we combine it. We play along and find the best way to fill the canvas and make the vertical bars. We might notice some other information tips, but we ignore them for now. Our grid is fine. Now, in similar manner we do the horizontal bars. An unlock and new lock of sizes might be needed when we make the first horizontalbar. Finally, our grid is ready.</p>
 <p>We will not make labels and other stuffs that a real measured grid paper might have. One final thing however we are going to add are three lines at 30° 45° and 60° angles. So we select <b>Draw Bezier curves and straight lines</b> and we click on point in lower part of the grid, nearby down border. Then we hold control and we move the other end until 30° are shown in status bar, usually situated in lower part of the editor. We do this again for 45° and for 60° lines. And that's it, this will be our final grid. </p>
 <p>We are almost ready. We have to make sure that entire mesh/grid is a single path. We need one path only. So we select all current shapes and combine them, so that we have only one big shape. Then we save the file in default svg format at some convenient place. It is available as Inkscape svg file in drawings folder.</p>
+
 ![Inkscape grid](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part03-InkscapeGrid.PNG)
 <p>Then, we save the file again as a XAML file, so that Inkscape generate XAML for us. So we select <b>File->Save as</b> and we select Microsoft XAML in Save as type field. We confirm with save. We don't want to be Silverlight compatible. Finally, we open the newly saved XAML with a text editor and look at the content. If we did well in previouis steps, there should be only one path with some path geometry.</p>
 
@@ -228,6 +234,7 @@ And we are ready with this part. Good job! Buckle up, we are not ready with this
 ### Getting Accent color and Accent color palette
 
 <p>What's the plan for this part? We have to: </p>
+
 * Install the Nuget for `Microsoft.Windows.SDK.Contracts`
 * Create two views, `AccentView.xaml` and `AccentDemoView.xaml`, similar to what we are doing in previous parts.
 * Use a class called `UISettings` and grace to it get the current values of Accent color, one lighter and one darker shade of it.
@@ -244,6 +251,7 @@ And we are ready with this part. Good job! Buckle up, we are not ready with this
 <p>There are however some customized animation classes that can be applied to specific properties of objects, one such being the `ThicknessAnimationUsingKeyFrames`. It is quite simple to use and that's why we start with it. We will animate the margin of a framework element, the border of our button, and this way we will make it look more interactive. You have to be very careful, when you animate size changes and I would advise you to generally not use animations that change sizes for Mouse over state or when using Mouse over triggers. It might happen that users point the cursor to the end of the button and leave it there with no further move. The animation is triggered, then stopped, then again triggered and some kind of infinite animation loop might happen.</p>
 <p>So our margin animation will be very short and barely noticeable and it will occur only on Pressed. Even if users trigger it constantly, it should be fine, as it is slower for users to click or press key. Even if they hold a key pressed, there are some milliseconds between the separate events for key press.</p>
 <p>In order to se the Pressed animation better, we will animate the "Pressed" button constantly, via a trigger that loads a storyboard animation once the user control is loaded. This approach will be quite useful in following parts as well. If you followed so far, you might notice that the design view of Microsoft Blend in our case shows a white x inside red circle in top right corner of all buttons, relying on Accent colors, colors we create in code-behind.</p>
+
 ![Design view peculiarity](https://github.com/MahmudOnWeb/StylingAButton/blob/master/Part04-DesignViewPeculiarity.png?raw=true)
 If you are looking at the markup, you might see that some underlying for some parts of XAML is made, saying that "The resource ... cannot be located". We have to live with this, we will look at the running application and we will see whether everything is as we want or not, animation will work as well only for the running application. So the design view is not very useful in our case, as the Properties panel is not very useful as well.
 For Accent demo view we are not going to place `AccentButtonTemplate` in our `General.xaml`. We will proceed in the same way as we did for Accent view - load accent colors before initializing the components in code-behind. Finally, here is the live preview for this part, made with Accent color of Default Blue selected. Time for part five, where we meet Inkscape again. 
@@ -289,6 +297,7 @@ We have to figure out and then implement small changes in shapes of our figures,
 ### Making the control template
 
 <p>We create the `ButtonTemplateNestedPaths` following the same approach, which we have used so far in this article. Because we do not change our geometry resources, it is not necessary to create copies of them in control template. It would not hurt us either, if we do so.</p>
+
 * On mouse over stroke will become thicker, from 10 to 20. Mouse over is usually triggered only when users hover over some of the paths or content presenter itself. They can however point to empty space in the button and this way state would not change to mouse over. To avoid this effect, we add a rectangle, stretching through entire grid with transparent background. When mouse cursor is ove this rectangle, the state will always change to mouse over.</p>
 * On pressed there will be short scale animation on X and Y, scaling from 1.2 till 0.7 and back to 1, for about 250 ms. In same time there will be change in the path, for about 100 ms.</p>
 * For disabled we make all path colors gray, together with Foreground change of content presenter.
@@ -317,6 +326,7 @@ Again, if users want to Buy something and you give them three buttons, they will
 ### Summary of steps
 
 <p>Here is a summary of what we are going to do with Inkscape in this part:</p>
+
 * We will create a circle with fill and stroke occupying most of our document, centered in the middle of it.
 * We will create second circle, having fill and stroke, but with smaller radius, and we will extract second from the first. Result will be something like fringe or ring with thick line.
 * Then, we will remove three segments from our figure. We will do this in the following manner - we will create rectangle, having small width but height equal to half of our document size. We will duplicate this rectangle two times and we will rotate it around the center of the document, nor around the center of rectangle. Then, we will remove those rectangles from our main shape.
