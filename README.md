@@ -94,7 +94,8 @@ We are going to use different fonts with different writing systems, so that we c
 
 ### Typefaces Fonts Cultures  Languages
 
-For every language we are going to use there will be specific font as well. Below you can see the languages, two letter language code and two letter country code, specified for every language, and the font used for it. We add fonts to Fonts folder. We specify Build Action for each of them to <b>Resource</b>. 
+For every language we are going to use there will be specific font as well. Below you can see the languages, two letter language code and two letter country code, specified for every language, and the font used for it. We add fonts to Fonts folder. We specify Build Action for each of them to <b>Resource</b>.
+
 Bear in mind that fonts almost everytime have sort of license related to them. All fonts used here have OFL license (Google Fonts) or for some copyright rights have expired. They resemble famous fonts, but they are not exactly like them. Lots of fonts do not have an OFL license, but a quite different one, a commercial one. So in such case you should not use them in your application like that. You have buy them, to follow licensing and redistribution info guidelines, contact the font vendors etc. 
 
 | Language (sorry, but cannot cover all) | Font name |
